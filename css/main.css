@@ -48,8 +48,9 @@ p {
 /*The widths are in a percentage!*/
 header {
 	border-bottom: 3px solid #77a466;
-	margin: 0 auto;
-	display: flex;
+  width: 100%
+  display: flex;
+  flex-flow:row wrap;
   justify-content: center;
   align-items: center;
 }
@@ -73,8 +74,10 @@ header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 1em;
-	padding: 0 10px;
-	display: inline;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -84,8 +87,9 @@ header nav ul li a{
 /*The widths are in a percentage!*/
 .top-section,
 .bottom-section {
-	margin: 0 auto;
+	width: 100%;
 	display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
@@ -115,16 +119,18 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+	width: 100%
 	height: auto;
 	border-top: 1px solid #eee;
-	display: flex;
+  display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
 
 .section-one h3 {
 	padding: 10px 0;
+  flex-flow: row wrap;
 }
 
 .section-two {
@@ -166,16 +172,17 @@ footer {
 	display: flex;
   justify-content: center;
   align-items: center;
+  font-size: .8em;
 }
 footer span {
 	font-family: 'Galada', cursive;
 	text-transform: lowercase;
 	color: #77a466;
-	font-size: 1.2em;
+	font-size: 1.5em;
 }
 
 /* ----------- Tablets larger than 768px wide ----------- */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
 
 	body {
 		font-family: 'Montserrat', Helvetica, Arial, sans-serif;
@@ -248,9 +255,7 @@ footer span {
 		font-weight: 700;
 		font-size: 1em;
 		padding: 0 10px;
-		display: flex;
-	  justify-content: center;
-	  align-items: center;
+    display:inline;
 	}
 	header nav ul li a{
 		text-decoration: none;
@@ -343,11 +348,12 @@ footer span {
 		display: flex;
 	  justify-content: center;
 	  align-items: center;
+    font-size: 1em;
 	}
 	footer span {
 		font-family: 'Galada', cursive;
 		text-transform: lowercase;
 		color: #77a466;
-		font-size: 1em;
+		font-size: 1.2em;
 	}
 }
